@@ -1,5 +1,18 @@
-a = [1,2,3]
-b = [4,5,6]
+class MyClass:
+    """A simple example class"""
+    i = 12345
 
-print(a.index(2))
-print(a)
+    def f(self):
+        return 'hello world'
+
+
+print(MyClass.i)
+
+MyClass.i = 'changed'
+
+b = MyClass()
+print(MyClass.i)
+print(b.i)
+
+MyClass.counter = 2
+print(MyClass.counter)
